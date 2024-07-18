@@ -34,6 +34,7 @@
 </aside>
 
 <style>
+    
     .fa-arrow-left{
         font-size: 1.5rem;
         cursor: pointer;
@@ -76,6 +77,7 @@
         background-color: black;
         color: white;
         padding-block: 10rem;
+        z-index: 0;
     }
 </style>
 

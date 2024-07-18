@@ -74,13 +74,13 @@
         transition: background-color 0.3s ease;
         transform: scale(1.02);
         transform: translate3d(10px,10px,10px);
-        z-index: 1;
         
         
     }
     
     .card:hover {
         -webkit-animation: slide-fwd-bottom 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        z-index: 3;
         animation: slide-fwd-bottom 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         box-shadow: 10px 10px 10px 10px rgba(200, 200, 200, 0.18) ;
         transition: box-shadow 0.3s ease;
@@ -96,8 +96,8 @@
             transform: translateZ(0) translateY(0) scale(1);
   }
   100% {
-    -webkit-transform: translateZ(16px) translateY(10px) scale(1.2);
-            transform: translateZ(16px) translateY(10px) scale(1.2);
+    -webkit-transform: translateZ(16px) translateY(10px) scale(1.1);
+            transform: translateZ(16px) translateY(10px) scale(1.1);
   }
 }
 @keyframes slide-fwd-bottom {
@@ -106,8 +106,8 @@
             transform: translateZ(0) translateY(0) scale(1);
   }
   100% {
-    -webkit-transform: translateZ(16px) translateY(10px) scale(1.2);
-            transform: translateZ(16px) translateY(10px) scale(1.2);
+    -webkit-transform: translateZ(16px) translateY(10px) scale(1.1);
+            transform: translateZ(16px) translateY(10px) scale(1.1);
   }
 }
 </style>
