@@ -1,0 +1,21 @@
+title,description,completed,task_id
+Research Topic,Read articles and gather information,false,1
+Write Outline,Create a detailed outline for the project,true,1
+Prepare Presentation,Design slides and practice presentation,false,2
+Attend Meeting,Discuss project updates with team members,true,2
+Create Mockups,Design mockups for new website features,false,3
+Review Feedback,Incorporate feedback from stakeholders,true,3
+Analyze Data,Collect and analyze data from user surveys,false,4
+Write Report,Summarize findings and recommendations,true,4
+Prepare Materials,Gather materials for upcoming workshop,false,5
+Facilitate Session,Lead interactive session with participants,true,5
+Update Codebase,Implement new features and bug fixes,false,6
+Write Tests,Develop and execute test cases for new functionalities,true,6
+Draft Proposal,Prepare proposal document for client review,false,7
+Revise Budget,Adjust budget based on project updates,true,7
+Conduct Interviews,Schedule and conduct interviews with candidates,false,8
+Evaluate Candidates,Assess candidates based on skills and experience,true,8
+Organize Event,Coordinate logistics and plan agenda for event,false,9
+Manage RSVPs,Track attendee responses and update guest list,true,9
+Draft Agreement,Prepare legal agreement for client approval,false,10
+Negotiate Terms,Discuss terms and finalize agreement with client,true,10

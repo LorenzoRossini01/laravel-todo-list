@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\StepController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   return view('home');
 })->name('home');
+
+Route::resource('tasks', TaskController::class);
+
+Route::resource('steps', StepController::class);
+
+Route::patch('/steps/{step}/completed', [StepController::class, 'updateCompleted'])->name('steps.update-completed');
+Route::patch('/tasks/{task}/reset-steps', [StepController::class, 'resetCompleted'])->name('steps.reset');

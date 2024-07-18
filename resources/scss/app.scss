@@ -3,9 +3,66 @@
 .wrapper {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
 
     main {
         flex-grow: 1;
+    }
+}
+
+.button-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+    height: 2.5rem;
+    border: none;
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: rgb(95, 159, 0);
+        &.reset {
+            background-color: rgb(255, 191, 0);
+        }
+        &.delete {
+            background-color: rgb(255, 0, 0);
+        }
+    }
+}
+
+input,
+textarea {
+    padding-inline: 2rem;
+    min-height: 2.5rem;
+    border: 1px solid #a6a6a6 !important;
+    background-color: #ebebeb !important;
+    border-radius: 0 !important;
+}
+
+.progress {
+    height: 7.5px !important; /* Altezza della progress bar */
+    /* background-color: #717171 !important; Colore di sfondo della progress bar */
+    border-radius: 2.5px; /* Bordi arrotondati */
+    overflow: hidden; /* Nasconde eventuali effetti che fuoriescono dal container */
+}
+
+.progress-bar {
+    height: 100%; /* Altezza della progress bar */
+    &.bad {
+        --red: rgb(255, 38, 38);
+        box-shadow: 0 0 10px 5px var(--red); /* Box shadow per il bagliore interno */
+        background-color: var(--red) !important;
+    }
+    &.medium {
+        --yellow: rgb(255, 255, 59);
+        box-shadow: 0 0 10px 5px var(--yellow); /* Box shadow per il bagliore interno */
+        background-color: var(--yellow) !important;
+    }
+    &.good {
+        --green: rgb(0, 255, 0);
+        box-shadow: 0 0 10px 5px var(--green); /* Box shadow per il bagliore interno */
+        background-color: var(--green) !important;
     }
 }

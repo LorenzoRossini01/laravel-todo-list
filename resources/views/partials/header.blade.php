@@ -11,6 +11,12 @@
           <li class="nav-item">
             <a @class(['nav-link', 'active' => Route::currentRouteName() == 'home']) aria-current="page" href="{{ route('home') }}">Home</a>
           </li>
+          <li class="nav-item">
+            <a @class(['nav-link', 'active' => Route::currentRouteName() == 'tasks.index']) aria-current="page" href="{{ route('tasks.index') }}">Lista Task</a>
+          </li>
+          <li class="nav-item">
+            <a @class(['nav-link', 'active' => Route::currentRouteName() == 'tasks.create']) aria-current="page" href="{{ route('tasks.create') }}">Crea Task</a>
+          </li>
       </div>
     </div>
   </nav>
